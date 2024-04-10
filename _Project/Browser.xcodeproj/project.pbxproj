@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -158,12 +158,12 @@
 		B002B85A1BAE420500C744AF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1420;
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1530;
 				ORGANIZATIONNAME = "High Caffeine Content";
 				TargetAttributes = {
 					B002B8611BAE420500C744AF = {
 						CreatedOnToolsVersion = 7.1;
-						DevelopmentTeam = NKQ4HJ66PX;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -282,6 +282,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -337,6 +338,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -364,16 +366,19 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 4310;
-				DEVELOPMENT_TEAM = NKQ4HJ66PX;
+				DEVELOPMENT_TEAM = LC739ASTRJ;
 				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
 				ENABLE_ON_DEMAND_RESOURCES = NO;
 				FRAMEWORK_SEARCH_PATHS = "";
 				INFOPLIST_FILE = Browser/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Browser;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MARKETING_VERSION = 4.3.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.moballo.tvosbrowser;
+				PRODUCT_BUNDLE_IDENTIFIER = io.schemamap.tvosbrowser;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = NO;
@@ -392,16 +397,19 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 4310;
-				DEVELOPMENT_TEAM = NKQ4HJ66PX;
+				DEVELOPMENT_TEAM = LC739ASTRJ;
 				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
 				ENABLE_ON_DEMAND_RESOURCES = NO;
 				FRAMEWORK_SEARCH_PATHS = "";
 				INFOPLIST_FILE = Browser/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Browser;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MARKETING_VERSION = 4.3.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.moballo.tvosbrowser;
+				PRODUCT_BUNDLE_IDENTIFIER = io.schemamap.tvosbrowser;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = NO;
