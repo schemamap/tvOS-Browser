@@ -1267,6 +1267,7 @@ static UIImage *kPointerCursor(void) {
                         [javaScript appendFormat:@"var textField = document.elementFromPoint(%i, %i);"
                          "var nativeInputValueSetter = Object.getOwnPropertyDescriptor(window.HTMLInputElement.prototype, 'value').set;"
                          "textField.dispatchEvent(new Event('focus'));"
+                         "nativeInputValueSetter.call(textField, '');"
                          , (int)point.x, (int)point.y];
                         
                         for (NSUInteger i = 0; i < inputValue.length; i++) {
